@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone Balance Inquiry</title>
+    <style>
+   form{
+    display: grid;
+    border: 2px solid black;
+    padding: 20px;
+   }
+   body{
+    display: flex;
+    justify-content: center;
+   }
+   form,input,label,select ,button{
+    margin-top: 5px;
+    width: 300px;
+   }
+    </style>
+</head>
+<body>
+    <form id="balanceForm">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" name="phoneNumber"required>
+        <label >chooes your operator</label>
+        <select>
+            <option >JIO</option>
+            <option >AIRTEL</option>
+            <option >BSNL</option>
+            <option >VI</option>
+        </select>
+      <button type="button">Check Balance</button>
+    </form>
+</body>
+</html>

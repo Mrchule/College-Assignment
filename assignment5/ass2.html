@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Touring Service</title>
+  <style>
+    nav {
+      background-color: #4CAF50;
+    }
+    nav a {
+      float: left;
+      color: #ffffff;
+      padding: 12px 16px;
+    }
+    nav .dropdown {
+      display: inline-block;
+    }
+    nav .content {
+      display: none;
+      position: absolute;
+      top: 110px;
+      background-color: #787373;
+    }
+    nav .dropdown:hover .content {
+      display: block;
+    }
+    section {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+    <h1 align="center">Touring Service</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tours</a>
+    <div class="dropdown">
+      <a href="#">Destinations</a>
+      <div class="content">
+        <a href="#">Europe</a>
+        <a href="#">Asia</a>
+        <a href="#">North America</a>
+      </div>
+    </div>
+    <a href="#">About Us</a>
+  </nav>
+  <section>
+    <div>
+      <h2>Tour Guides</h2>
+      <ul>
+        <li>John Doe</li>
+        <li>Jane Smith</li>
+      </ul>
+    </div>
+    <div>
+      <form>
+        <h2>Book Your Tour</h2>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <input type="submit" value="Book Now">
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>

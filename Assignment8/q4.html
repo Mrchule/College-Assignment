@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>User Login</title>
+  <style>
+  form{
+    border: 1px solid black;
+    width: 300px;
+    padding: 12px;
+  }
+  </style>
+</head>
+<body>
+  <form id="loginForm" onsubmit="validateLoginForm(); return false;">
+    <h2>User Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <br> <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function validateLoginForm() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === '' || password === '') {
+        alert('Please enter both username and password');
+      } else {
+        alert('Login successful!');
+      }
+    }
+  </script>
+</body>
+</html>

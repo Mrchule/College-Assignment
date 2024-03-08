@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+</head>
+
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form id="registrationForm">
+    <input type="text" placeholder="enter your name" onkeyup="" id="name">
+    <button onclick="cl()"></button>
+  </form>
+
+  <script>
+    let x = document.getElementById("name");
+    function validat(elem) {
+      if (elem.value.length < 6) {
+        alert("name should be greater than 6 letter")
+      }
+
+    }
+
+    function cl() {
+
+      if (name.value.length < 6) {
+        console.log("chota hai")
+      }
+    }
+  </script>
+
+</body>
+
+</html>

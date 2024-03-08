@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Corona Dashboard Odisha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    div {
+      max-width: 400px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+    select, input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Corona Dashboard Odisha</h1>
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#vaccination">Vaccination</a>
+    <a href="#statistics">Statistics</a>
+  </nav>
+
+  <div id="vaccination">
+    <h2>Vaccination Slot Booking</h2>
+    <form>
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date">
+
+      <label for="place">Select Place:</label>
+      <select id="place" name="place">
+       
+        <option value="place1">burla</option>
+        <option value="place2">sambalpur</option>
+        <option value="place2">bargarth</option>
+        <option value="place2">rourkela</option>
+       
+      </select>
+
+      <button type="submit">Book Slot</button>
+    </form>
+  </div>
+</body>
+</html>

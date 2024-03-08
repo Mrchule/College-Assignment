@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            margin-top: 10%;
+            font-size: 25px;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h2>Simple Calculator</h2>
+            <label>Enter 1st Number:</label>
+            <input type="number" id="num1" style="width:100px;">
+            <br>
+            <label>Enter 2nd Number:</label>
+            <input type="number" id="num2" style="width:100px;">
+            <br>
+            <button onclick="cal()">calculate</button><br>
+            
+            <p id="result"></p>
+        </div>
+    </center>
+    <script>
+        function cal() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            num1=parseFloat(num1)
+            num2=parseFloat(num2)
+            var add = num1 + num2;
+            var sub = num1 - num2;
+            var mul = num1 * num2;
+            var div = num1 / num2;
+            document.getElementById("result").innerHTML = "Addition: " + add + "<br>" + "Subtraction :" + sub + "<br>" + "Multiplication : " + mul + "<br>" + "Division:" + div;
+        }
+    </script>
+</body>
+</html>
